@@ -24,5 +24,6 @@ const isLoggedIn = async(req, resizeBy, next) => {
     } catch (error) {
         throw new Error(error)
     }
-
 }
+
+module.exports = isLoggedIn

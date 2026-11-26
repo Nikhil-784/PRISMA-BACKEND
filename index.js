@@ -12,8 +12,10 @@ app.use(express.urlencoded({extended: true}))
 app.use(cookieParser())
 
 const userRouter = require('./routes/userRoutes')
+const postRouter = require('./routes/postRoutes')
 
 app.use('/api', userRouter)
+app.use('/api', postRouter)
 
 
 
